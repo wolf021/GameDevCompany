@@ -46,7 +46,7 @@ const HomePage = () => {
     <>
       <section className=" h-max  relative mt-[-4.5rem]    " id="hero-section">
         <HeroSlider images={HeroData} />
-        <div className="fixed h-[50px] w-[70px] bottom-2  animate-pulse right-2" >
+        <div className="fixed h-[50px] w-[70px] bottom-2  animate-pulse right-2 z-10" >
           <img className="h-[100%] w-full " src={Whatsapp} alt="" />
 
         </div>
