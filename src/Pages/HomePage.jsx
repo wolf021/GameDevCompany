@@ -46,8 +46,9 @@ const HomePage = () => {
     <>
       <section className=" h-max  relative mt-[-4.5rem]    " id="hero-section">
         <HeroSlider images={HeroData} />
-        <div className=" fixed bottom-10 right-1 ">
-          <img className=" animate-pulse h-[60px]" src={Whatsapp} alt="" />
+        <div className="fixed h-[50px] w-[70px] bottom-2  animate-pulse right-2" >
+          <img className="h-[100%] w-full " src={Whatsapp} alt="" />
+
         </div>
       </section>
       <section id="Why-us-section" className="  my-[5rem] ">
@@ -71,9 +72,8 @@ const HomePage = () => {
 
       <section
         id="Banner"
-        className="flex flex-col md:flex-row items-center space-x-5 md:justify-center  md:align-middle md:space-x-10 w-full px-3 text-center md:text-start space-y-4 md:mx-10 md:items-center  box-border my-[4rem] "
-      >
-        <p className="md:w-[50%]  font-semibold text-2xl text-slate-500">
+         className="flex flex-col text-center items-center px-2 my-[5rem] space-y-4  md:flex-row md:items-center justify-center md:space-x-10  " >
+        <p className="md:w-[68%]  font-semibold text-xl md:text-2xl text-slate-500">
           Are you looking for a gaming app agency in the USA? Trust our talented
           team of designers and developers to get high-quality 2D and 3D games.
         </p>

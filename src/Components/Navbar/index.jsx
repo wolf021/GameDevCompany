@@ -11,6 +11,7 @@ const Navbar = () => {
       const handleScroll = () => {
         if (window.scrollY > 100) {
           setScrolling(true);
+          
         } else {
           setScrolling(false);
         }
@@ -26,7 +27,7 @@ const Navbar = () => {
 
 
   return (
-    <div className={`flex md:px-3 text-white font-bold justify-between  h-[8vh] items-center sticky top-0 z-10 ${scrolling? "bg-white text-slate-900 text-black border-b-2 duration-300  ": "bg-transparent text-white duration-300 "} w-full `} >  
+    <div className={`flex md:px-3 text-white font-bold justify-between  h-[8vh] items-center sticky top-0 z-10 ${scrolling? "bg-white  text-black border-b-2 duration-300  ": "bg-transparent text-white duration-300 "} w-full `} >  
         <div className='w-[150px]' >
             <img src={GameBitLogo} alt="" />
         </div>
