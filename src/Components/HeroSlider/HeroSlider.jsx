@@ -7,6 +7,7 @@ import Button from '../Button';
 const HeroSlider = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+
   const handleHeroChange = (index) => {
     setCurrentImageIndex(index);
   };
@@ -51,8 +52,9 @@ const HeroSlider = ({ images }) => {
             <img
               src={`${image.image}`}
               alt="Hero"
-              className='w-full h-[40vh] md:h-[90vh]'
+              className='w-full h-[40vh] md:h-[90vh] bg-slate-200'
               loading='lazy'
+              
             />
             <div className='absolute  box-border  text-center p-3 md:p-6 rounded-xl  flex flex-col items-center gap-3 md:gap-6 text-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-stone-700 bg-opacity-40 w-max text-white  font-bold'>
               <div className=' text-2xl md:text-5xl w-[80%] text-white'>
@@ -70,7 +72,7 @@ const HeroSlider = ({ images }) => {
          <button
          key={index}
          onClick={() => handleHeroChange(index)}
-         className={`transition-opacity w-[5rem] h-2 rounded focus:outline-white ${
+         className={`transition-opacity w-[1rem] h-2 rounded focus:outline-white ${
            currentImageIndex === index ? 'bg-orange-400' : 'bg-white'
          }`}
        >

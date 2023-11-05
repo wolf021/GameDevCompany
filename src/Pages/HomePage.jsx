@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
-import Whatsapp from "../assets/icons/whatsapp (1).svg"
 import Button from "../Components/Button"
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons"
 import TrustUmg from "../assets/icons/trust.png"
 import HeroSlider from "../Components/HeroSlider/HeroSlider"
 import {
@@ -11,6 +11,7 @@ import {
 } from "../../DataConfig/Data"
 import Card from "../Components/Card"
 import FormImg from "../assets/form.jpg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const HomePage = () => {
   const sliderRef = useRef(null)
@@ -46,11 +47,19 @@ const HomePage = () => {
     <>
       <section className=" h-max  relative     " id="hero-section">
         <HeroSlider images={HeroData} />
-        <div className="fixed h-[50px] w-[70px] bottom-2  animate-pulse right-2 z-10" >
-          <img className="h-[100%] w-full " src={Whatsapp} alt="" />
+     <div className="fixed  rounded-full  animate-pulse border-orange-400 bottom-14   right-4 z-10  w-max " >
+          <a href="https://wa.me/message/2RFBFUTBCJUIL1">
 
-        </div>
+          <FontAwesomeIcon size="3x" className="text-green-400" icon={faWhatsapp} />
+          </a>
+
+        </div> 
       </section>
+    
+    <section className="" >
+
+    </section>
+    
       <section id="Why-us-section" className="  my-[5rem] ">
         <h3 className=" font-semibold text-4xl text-center text-slate-500 ">
           <span className="text-orange-400">3D Games </span> &{" "}
@@ -60,8 +69,9 @@ const HomePage = () => {
           id="why-us-card-container"
           className="flex flex-col px-3 items-center justify-center md:justify-around my-10 md:flex-row  "
         >
-          {CardData.map((card) => (
+          {CardData.map((card,index) => (
             <Card
+           
               cardImg={card.image}
               title={card.title}
               description={card.description}
@@ -74,7 +84,7 @@ const HomePage = () => {
         id="Banner"
          className="flex flex-col text-center items-center px-2 my-[5rem] space-y-4  md:flex-row md:items-center justify-center md:space-x-10  " >
         <p className="md:w-[68%]  font-semibold text-xl md:text-2xl text-slate-500">
-          Are you looking for a gaming app agency in the USA? Trust our talented
+          Are you looking htmlFor a gaming app agency in the USA? Trust our talented
           team of designers and developers to get high-quality 2D and 3D games.
         </p>
         <Button>Book A Free Consultation</Button>
@@ -118,7 +128,7 @@ const HomePage = () => {
             <span className="text-orange-400"> Web</span> Development Project
           </h3>
           <p className=" md:w-[70%] font-medium text-xl text-slate-600 leading-9  ">
-            Keeping up with the latest techs and innovations is necessary for
+            Keeping up with the latest techs and innovations is necessary htmlFor
             gamers and game development experts alike. From Augmented Reality
             and Virtual Reality to cross-platform play and mobile gaming,
             there’s a lot to look forward to as the gaming industry reaches new
@@ -148,8 +158,9 @@ const HomePage = () => {
           id="ourservices-card-container"
           className="flex md:flex-wrap overflow-x-auto   my-10 gap-y-2 gap-x-1  mx-[2rem] "
         >
-          {OurServices.map((card) => (
+          {OurServices.map((card,index) => (
             <Card
+            
               cardImg={card.image}
               title={card.title}
               description={card.description}
@@ -172,11 +183,11 @@ const HomePage = () => {
           </div>
         </div>
         <div>
-          <form class="grid px-3 py-4 md:py-0  md:grid-cols-2 h-max   gap-4">
-            <div class="mb-4 col-span-2 md:col-auto ">
+          <form className="grid px-3 py-4 md:py-0  md:grid-cols-2 h-max   gap-4">
+            <div className="mb-4 col-span-2 md:col-auto ">
               <label
                 className="text-orange-400 font-semibold text-2xl   "
-                for="name"
+                htmlFor="name"
               >
                 Name:
               </label>
@@ -185,14 +196,14 @@ const HomePage = () => {
                 id="name"
                 name="name"
                 placeholder="Name"
-                class="w-full px-3 py-2 border rounded-lg  outline-orange-400"
+                className="w-full px-3 py-2 border rounded-lg  outline-orange-400"
               />
             </div>
 
-            <div class="mb-4 col-span-2  md:col-auto">
+            <div className="mb-4 col-span-2  md:col-auto">
               <label
                 className="text-orange-400 font-semibold text-2xl "
-                for="email"
+                htmlFor="email"
               >
                 Email:
               </label>
@@ -201,14 +212,14 @@ const HomePage = () => {
                 id="email"
                 name="email"
                 placeholder="Email"
-                class="w-full px-3 py-2 border rounded-lg outline-orange-400"
+                className="w-full px-3 py-2 border rounded-lg outline-orange-400"
               />
             </div>
 
-            <div class="mb-4 col-span-2">
+            <div className="mb-4 col-span-2">
               <label
                 className="text-orange-400 font-semibold text-2xl "
-                for="phone"
+                htmlFor="phone"
               >
                 Phone Number:
               </label>
@@ -217,14 +228,14 @@ const HomePage = () => {
                 id="phone"
                 name="phone"
                 placeholder="Phone Number"
-                class="w-full px-3 py-2 border rounded-lg outline-orange-400"
+                className="w-full px-3 py-2 border rounded-lg outline-orange-400"
               />
             </div>
 
-            <div class="mb-4  col-span-2">
+            <div className="mb-4  col-span-2">
               <label
                 className="text-orange-400 mb-4 font-semibold text-2xl "
-                for="message"
+                htmlFor="message"
               >
                 Message:
               </label>
@@ -232,7 +243,7 @@ const HomePage = () => {
                 id="message"
                 name="message"
                 placeholder="Enter your Query Here . We will Get Back To You"
-                class="w-full h-40 px-3 py-2 border rounded-lg outline-orange-400 resize-none"
+                className="w-full h-40 px-3 py-2 border rounded-lg outline-orange-400 resize-none"
               ></textarea>
             </div>
             <div className=" ">

@@ -1,11 +1,89 @@
-import React from 'react'
+import React from "react"
+import BrandLogo from "../../assets/BrandLogo.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "react-router-dom"
+import {
+  faFacebook,
+  faFacebookSquare,
+  faInstagram,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons"
+import { OurServicesLinks } from "../../../DataConfig/Data"
+import dayjs from "dayjs"
 
 const Footer = () => {
+  const currentDate = dayjs().format("YYYY")
   return (
-    <div className='bg-orange-400 text-center py-3' >
-        <p className='  text-white text-xl ' > 2023 GameBit<sup>©</sup>. All Rights Reserved</p>
-    </div>
+    <>
+      <div className="w-full flex md:flex-row flex-col items justify-around py-10 bg-slate-700 text-white h-max space-y-7 px-10 ">
+        <div className="flex items-center space-y-3 py-3 flex-col text-center  md:w-[20%]  ">
+          <div className="  ">
+            <img className=" h-[70px] " src={BrandLogo} alt="" />
+          </div>
+          <div>
+            <p>
+              A Digital Product Company Providing Our Services To Make Thing
+              Better
+            </p>
+          </div>
+          <div className="flex justify-around space-x-10  ">
+            <FontAwesomeIcon
+              size="2x"
+              className="text-orange-400"
+              icon={faFacebookSquare}
+            />
+            <FontAwesomeIcon
+              size="2x"
+              className="text-orange-400"
+              icon={faInstagram}
+            />
+            <FontAwesomeIcon
+              size="2x"
+              className="text-orange-400"
+              icon={faLinkedin}
+            />
+            <FontAwesomeIcon
+              size="2x"
+              className="text-orange-400"
+              icon={faWhatsapp}
+            />
+          </div>
+        </div>
+        <div className="text-center md:text-start ">
+          <p className="text-xl font-semibold border-b-2  border-orange-400 mb-3 ">
+            Services
+          </p>
+          <ul className=" space-y-2 flex flex-col ">
+            {OurServicesLinks.map((serviceLink) => (
+              <li>
+                <a href="">{serviceLink.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="text-center md:text-start ">
+          <p className="text-xl font-semibold border-b-2 border-orange-400 mb-3 ">
+            Main-LInks
+          </p>
+          <ul className=" space-y-2 flex flex-col ">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+      <div className="bg-orange-400 text-center py-3">
+        <p className="  text-white text-xl ">
+          {" "}
+          {currentDate} GameBit<sup>©</sup>. All Rights Reserved
+          <span className="text-slate-700 font-semibold ">
+            <Link to="/privacy-policy" >
+            .Privacy Policy</Link></span>
+        </p>
+      </div>
+    </>
   )
 }
 
-export default Footer;
+export default Footer

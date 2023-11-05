@@ -6,17 +6,24 @@ import Button from './Components/Button'
 import HomePage from './Pages/HomePage'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import {BrowserRouter, Routes, Route} from  "react-router-dom"
+import PrivacyPolicyPage from './Pages/PrivacyPolicyPage'
 
 function App() {
   
 
   return (
     <>
-    <div className='' >
+    <BrowserRouter>
     <Navbar/>
-  <HomePage/>
+    <Routes>
+      <Route path='/' element={<HomePage/>} />
+      <Route path='/privacy-policy' element={<PrivacyPolicyPage/>} />
+    </Routes>
+  
   <Footer/>
-    </div>
+    </BrowserRouter>
+   
     </>
   )
 }
