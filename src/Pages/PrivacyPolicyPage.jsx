@@ -14,7 +14,7 @@ const PrivacyPolicyPage = () => {
       <div className="mx-10 my-5 space-y-10">
         <p className="text-xl text-slate-500">Last Updated: [{currentDate}]</p>
         <p className="text-xl text-slate-500">
-          GameBit<sup>©</sup> ("we," "us," or "our") is committed to protecting
+          GameBit<sup>©</sup> is committed to protecting
           the privacy and security of your personal information. This Privacy
           Policy outlines how we collect, use, disclose, and safeguard your
           information when you use our game and web development services. By

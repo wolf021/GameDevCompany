@@ -17,37 +17,48 @@ const Footer = () => {
   return (
     <>
       <div className="w-full flex md:flex-row flex-col items justify-around py-10 bg-slate-700 text-white h-max space-y-7 px-10 ">
-        <div className="flex items-center space-y-3 py-3 flex-col text-center  md:w-[20%]  ">
+        <div className="flex items-center space-y-3 py-3 justify-around flex-col text-center  md:w-[20%]  ">
           <div className="  ">
             <img className=" h-[70px] " src={BrandLogo} alt="" />
           </div>
           <div>
             <p>
-              A Digital Product Company Providing Our Services To Make Thing
-              Better
+            we blend creativity and code to bring your digital dreams to life. Whether it's crafting captivating games or dynamic web solutions.
             </p>
           </div>
           <div className="flex justify-around space-x-10  ">
+          <a className="group" href="/">
+
+<FontAwesomeIcon
+  size="2x"
+  className="text-white group-hover:text-orange-400 "
+  icon={faFacebookSquare}
+  />
+  </a>
+             <a className="group" href="/">
+
+<FontAwesomeIcon
+  size="2x"
+  className="text-white group-hover:text-orange-400 "
+  icon={faInstagram}
+  />
+  </a>
+             <a className="group" href="/">
+
+<FontAwesomeIcon
+  size="2x"
+  className="text-white group-hover:text-orange-400 "
+  icon={faLinkedin}
+  />
+  </a>
+            <a className="group" href="/">
+
             <FontAwesomeIcon
               size="2x"
-              className="text-orange-400"
-              icon={faFacebookSquare}
-            />
-            <FontAwesomeIcon
-              size="2x"
-              className="text-orange-400"
-              icon={faInstagram}
-            />
-            <FontAwesomeIcon
-              size="2x"
-              className="text-orange-400"
-              icon={faLinkedin}
-            />
-            <FontAwesomeIcon
-              size="2x"
-              className="text-orange-400"
+              className="text-white group-hover:text-orange-400 "
               icon={faWhatsapp}
-            />
+              />
+              </a>
           </div>
         </div>
         <div className="text-center md:text-start ">

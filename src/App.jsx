@@ -8,6 +8,8 @@ import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import {BrowserRouter, Routes, Route} from  "react-router-dom"
 import PrivacyPolicyPage from './Pages/PrivacyPolicyPage'
+import ErrorPage from './Pages/ErrorPage'
+import ScrollToTop from './Helpers/ScrollTopTop'
 
 function App() {
   
@@ -15,10 +17,12 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <ScrollToTop/>
     <Navbar/>
     <Routes>
       <Route path='/' element={<HomePage/>} />
       <Route path='/privacy-policy' element={<PrivacyPolicyPage/>} />
+      <Route path='*' element={<ErrorPage/>} />
     </Routes>
   
   <Footer/>
