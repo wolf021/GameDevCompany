@@ -12,13 +12,19 @@ const Navbar = () => {
     const [hamburger, setHamburder] = useState(false);
     const [servicesDropdownVisible, setServicesDropdownVisible] = useState(false);
 
+    
+  
 
     useEffect(() => {
       const handleScroll = () => {
         if (window.scrollY > 100) {
           setScrolling(true);
           
-        } else {
+        } else if(window.scrollY <80){
+        setHamburder(false)
+
+        }
+         else {
           setScrolling(false);
         }
       };
@@ -77,7 +83,7 @@ const Navbar = () => {
               }
               </ul>
             </li>
-            <li>Contact</li>
+            
             <li>About</li>
         </ul>
             <Button>Contact Us</Button>

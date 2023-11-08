@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 import Button from "../Components/Button"
-import {faWhatsapp} from "@fortawesome/free-brands-svg-icons"
+
 import TrustUmg from "../assets/icons/trust.png"
 import HeroSlider from "../Components/HeroSlider/HeroSlider"
 import {
@@ -8,16 +8,22 @@ import {
   CardData,
   GameImages,
   OurServices,
+  Testimonilas,
+  StackData
 } from "../../DataConfig/Data"
 import Card from "../Components/Card"
-import FormImg from "../assets/form.jpg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+
+import TestimonialCard from "../Components/TestimonialCard/TestimonialCard"
+
 
 const HomePage = () => {
   const sliderRef = useRef(null)
+  const sliderRef2 = useRef(null)
 
   useEffect(() => {
     const slider = sliderRef.current
+    const slider2 = sliderRef2.current
 
     // Function to auto-scroll
     const autoScroll = () => {
@@ -33,13 +39,28 @@ const HomePage = () => {
         }
       }
     }
+    const autoScroll2 = () => {
+      if (slider2) {
+        const scrollWidth = slider2.scrollWidth - slider2.clientWidth
+        const scrollSpeed = 2 // Adjust scroll speed as needed
+
+        slider2.scrollLeft += scrollSpeed
+
+        // Reset to the beginning when reaching the end
+        if (slider2.scrollLeft >= scrollWidth) {
+          slider2.scrollLeft = 0
+        }
+      }
+    }
 
     // Set an interval to call autoScroll every few milliseconds
-    const scrollInterval = setInterval(autoScroll, 40) // Adjust the interval as needed
+    const scrollInterval = setInterval(autoScroll, 60) // Adjust the interval as needed
+    const scrollInterval2 = setInterval(autoScroll2, 50);
 
     // Cleanup the interval when the component unmounts
     return () => {
       clearInterval(scrollInterval)
+      clearInterval(scrollInterval2)
     }
   }, [])
 
@@ -47,17 +68,23 @@ const HomePage = () => {
     <>
       <section className=" h-max  relative     " id="hero-section">
         <HeroSlider images={HeroData} />
-     <div className="fixed  rounded-full  animate-pulse border-orange-400 bottom-14   right-4 z-10  w-max " >
-          <a href="https://wa.me/message/2RFBFUTBCJUIL1">
-
-          <FontAwesomeIcon size="3x" className="text-green-400" icon={faWhatsapp} />
-          </a>
-
-        </div> 
+    
       </section>
     
-    <section className="" >
-
+    <section className="bg-slate-100 box-border h-max py-2 "  >
+      
+      <div className="flex py-4 md:mx-[5rem] mx-[1rem] overflow-x-auto no-scrollbar space-x-7 " ref={sliderRef}>
+      
+      {StackData.map((stack)=>(
+        
+        <div className="w-full min-w-[10rem]  flex flex-col items-center space-y-2 bg-white py-4 rounded-3xl shadow-lg " >
+        <div className="w-[60px] h-[60px]  " >
+        <img  src={stack.image} alt="" />
+        </div>
+        <p className=" font-medium text-xl text-slate-600 ">{stack.title}</p>
+      </div>
+      ))}
+      </div>
     </section>
     
       <section id="Why-us-section" className="  my-[5rem] ">
@@ -67,7 +94,7 @@ const HomePage = () => {
         </h3>
         <div
           id="why-us-card-container"
-          className="flex flex-col px-3 items-center justify-center md:justify-around my-10 md:flex-row  "
+          className="flex flex-col px-1 items-center justify-center md:justify-around my-10 md:flex-row  "
         >
           {CardData.map((card,index) => (
             <Card
@@ -138,8 +165,9 @@ const HomePage = () => {
 
         <div
           id="games-project-slider"
+          ref={sliderRef2}
           className="flex justify-between  overflow-x-scroll space-x-10 mx-[1rem] md:mx-[4rem] my-6 no-scrollbar "
-          ref={sliderRef}
+          
         >
           {GameImages.map((game) => (
             <div className="w-[700px] h-[200px] min-w-full md:min-w-[350px] rounded-md overflow-hidden  ">
@@ -169,89 +197,23 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section
-        id="form-section"
-        className="bg-slate-800 flex  space-y-5 md:flex-row flex-col md:space-x-[4rem]  md:items-center   h-max  "
-      >
-        <div className="md:w-[50%] h-[600px] relative  ">
-          <img className="w-full h-[100%] " src={FormImg} alt="" />
-          <div className="absolute top-1/2 px-10 md:w-[80%]  text-white font-semibold text-4xl  ">
-            <p className=" font-semibold text-4xl  text-slate-100 ">
-              <span className="text-orange-400">Contact us </span>Today and Get
-              <span className="text-orange-400"> Started</span> With Us
-            </p>
-          </div>
+      <section className="my-[5rem]" >
+      <h3 className=" font-semibold text-4xl text-center text-slate-500 ">
+          <span className="text-orange-400">Our </span> Trusted {" "}
+          <span className="text-orange-400">Customes </span> Remarks
+        </h3>
+        <div className="flex md:justify-around overflow-x-auto md:space-x-3 space-x-3 items-center my-4 mx-8  ">
+
+        {Testimonilas.map((testimonial)=>(
+
+        <TestimonialCard Name={testimonial.Name} Info={testimonial.Info} Rating={testimonial.Rating} Image={testimonial.Image}  />
+        ))}
         </div>
-        <div>
-          <form className="grid px-3 py-4 md:py-0  md:grid-cols-2 h-max   gap-4">
-            <div className="mb-4 col-span-2 md:col-auto ">
-              <label
-                className="text-orange-400 font-semibold text-2xl   "
-                htmlFor="name"
-              >
-                Name:
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-                className="w-full px-3 py-2 border rounded-lg  outline-orange-400"
-              />
-            </div>
 
-            <div className="mb-4 col-span-2  md:col-auto">
-              <label
-                className="text-orange-400 font-semibold text-2xl "
-                htmlFor="email"
-              >
-                Email:
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                className="w-full px-3 py-2 border rounded-lg outline-orange-400"
-              />
-            </div>
-
-            <div className="mb-4 col-span-2">
-              <label
-                className="text-orange-400 font-semibold text-2xl "
-                htmlFor="phone"
-              >
-                Phone Number:
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Phone Number"
-                className="w-full px-3 py-2 border rounded-lg outline-orange-400"
-              />
-            </div>
-
-            <div className="mb-4  col-span-2">
-              <label
-                className="text-orange-400 mb-4 font-semibold text-2xl "
-                htmlFor="message"
-              >
-                Message:
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Enter your Query Here . We will Get Back To You"
-                className="w-full h-40 px-3 py-2 border rounded-lg outline-orange-400 resize-none"
-              ></textarea>
-            </div>
-            <div className=" ">
-              <Button type="submit">Submit</Button>
-            </div>
-          </form>
-        </div>
       </section>
+
+      
+    
     </>
   )
 }
