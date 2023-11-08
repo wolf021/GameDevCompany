@@ -11,6 +11,8 @@ import WebDev from '../assets/webdev.jpg'
 import { faBinoculars, faBrush, faBug, faCloudArrowUp, faGears, faLaptopCode, faLightbulb, faSwatchbook,faGear } from "@fortawesome/free-solid-svg-icons"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
 
+
+
 const WebDevelopmentPage = () => {
     return (
       <>
@@ -29,7 +31,13 @@ const WebDevelopmentPage = () => {
                 technologies that perfectly facilitate the digital transformation
                 of enterprises.
               </p>
-              <Button>Book a Free Consultation</Button>
+              
+
+              
+
+<Button> <a href='#form-section' >Book a Free Consultation</a> </Button>
+
+             
             </div>
           </div>
         </section>
@@ -47,7 +55,7 @@ const WebDevelopmentPage = () => {
               user-friendly Front-End/Backend Websites under one roof.
             </p>
           </div>
-          <div className="flex flex-wrap justify-start gap-7 mx-[5rem] my-10  " >
+          <div className="flex md:flex-wrap md:justify-start md:gap-7 gap-4 md:mx-[5rem] mx-[1rem] my-10 flex-row overflow-x-auto scroll-smooth" >
             {WebExperties.map((experties)=>(
               <ServiceCard Title={experties.Title} Info={experties.Info} Img={experties.Icon}  />
                
@@ -62,30 +70,30 @@ const WebDevelopmentPage = () => {
         
         <section
           id="trust-section"
-          className="md:my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row-reverse flex-col-reverse items-center md:justify-around "
+          className="md:my-[5rem] my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row-reverse flex-col-reverse items-center md:justify-around "
         >
           <div className="md:w-[50%] space-y-6">
           <h3 className=" font-semibold text-4xl  text-slate-500 "><span className="text-orange-400">Custom</span> Web Development{" "}</h3>
             <p className=" font-medium text-xl text-slate-600 leading-9  ">
             Android app development is the process of creating mobile apps for Android devices. It involves concept, design, programming, testing, and app store submission. Developers use languages like Java and Kotlin, optimize for performance, and promote apps for success in a competitive market. Ongoing updates are key for maintaining quality and compatibility.{" "}
             </p>
-            <Button>Book A Free Consultation</Button>
+      
           </div>
-          <div className=" w-[40%]">
+          <div className=" md:w-[40%]">
             <img src={WebDev} alt="" />
           </div>
         </section>
 
         <section
           id="trust-section"
-          className="md:my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around "
+          className="my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around "
         >
           <div className="md:w-[50%] space-y-6  "  >
           <h3 className=" font-semibold text-4xl  text-slate-500 "><span className="text-orange-400">Mobile </span>  Development{" "}</h3>
             <p className=" font-medium text-xl text-slate-600 leading-9  ">
             We specialize in iOS game development, and our experienced team can create captivating games for the iOS platform. From concept to design, programming, graphics, and sound, we offer a full range of services. We ensure quality through testing, updates, and maintenance. Whether it's action-packed or puzzle games, we have the skills to bring your vision to life. Join us on this exciting journey of iOS game development.{" "}
             </p>
-            <Button>Book A Free Consultation</Button>
+       
           </div>
           <div className=" h-[600px] " >
             <img className="h-[100%] w-full " src={Mobile} alt="" />
@@ -203,13 +211,13 @@ const WebDevelopmentPage = () => {
           </div>
 
           <div className=" my-10 mx-[4rem] " >
-  <ul className="grid grid-cols-4 gap-4 ">
+  <ul className="grid md:grid-cols-4 gap-4  ">
     {
         Stacks.map((stack)=>(
 
-            <li className="flex gap-5 items-center" >
+            <li className="flex gap-5   items-center  " >
                 <FontAwesomeIcon className="text-orange-400" icon={faGear} />
-                <p className="text-xl flex text-slate-600 font-semibold " >
+                <p className="text-xl  flex text-slate-600 font-semibold " >
 
                 {stack}
                 </p>
@@ -222,6 +230,11 @@ const WebDevelopmentPage = () => {
 
           
         </section>
+
+    <section>
+        
+        
+    </section>
        
       </>
     )

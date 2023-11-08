@@ -114,7 +114,10 @@ const HomePage = () => {
           Are you looking htmlFor a gaming app agency in the USA? Trust our talented
           team of designers and developers to get high-quality 2D and 3D games.
         </p>
-        <Button>Book A Free Consultation</Button>
+        <a href='#form-section' >
+
+<Button>Book a Free Consultation</Button>
+</a>
       </section>
 
       <section
@@ -140,7 +143,7 @@ const HomePage = () => {
             Reprehenderit sunt harum aut cupiditate reiciendis sapiente enim
             sed!{" "}
           </p>
-          <Button>Book A Free Consultation</Button>
+          
         </div>
         <div className=" ">
           <img src={TrustUmg} alt="" />
@@ -212,7 +215,13 @@ const HomePage = () => {
 
       </section>
 
-      
+ 
+      <section>
+ 
+
+ 
+
+      </section>
     
     </>
   )

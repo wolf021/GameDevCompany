@@ -28,7 +28,10 @@ const GameDevelopmentPage = () => {
               technologies that perfectly facilitate the digital transformation
               of enterprises.
             </p>
-            <Button>Book a Free Consultation</Button>
+            <a href='#form-section' >
+
+<Button>Book a Free Consultation</Button>
+</a>
           </div>
         </div>
       </section>
@@ -67,7 +70,10 @@ const GameDevelopmentPage = () => {
           <p className=" font-medium text-xl text-slate-600 leading-9  ">
           We specialize in iOS game development, and our experienced team can create captivating games for the iOS platform. From concept to design, programming, graphics, and sound, we offer a full range of services. We ensure quality through testing, updates, and maintenance. Whether it's action-packed or puzzle games, we have the skills to bring your vision to life. Join us on this exciting journey of iOS game development.{" "}
           </p>
-          <Button>Book A Free Consultation</Button>
+          <a href='#form-section' >
+
+<Button>Book a Free Consultation</Button>
+</a>
         </div>
         <div className=" " >
           <img src={TrustUmg} alt="" />
@@ -82,7 +88,10 @@ const GameDevelopmentPage = () => {
           <p className=" font-medium text-xl text-slate-600 leading-9  ">
           Android app development is the process of creating mobile apps for Android devices. It involves concept, design, programming, testing, and app store submission. Developers use languages like Java and Kotlin, optimize for performance, and promote apps for success in a competitive market. Ongoing updates are key for maintaining quality and compatibility.{" "}
           </p>
-          <Button>Book A Free Consultation</Button>
+          <a href='#form-section' >
+
+<Button>Book a Free Consultation</Button>
+</a>
         </div>
         <div className=" ">
           <img src={Vector2} alt="" />
@@ -97,7 +106,10 @@ const GameDevelopmentPage = () => {
           <p className=" font-medium text-xl text-slate-600 leading-9  ">
           Developing games for the Amazon platform entails creating games for Amazon's Appstore, exploring effective monetization strategies, optimizing performance for various devices, and conducting rigorous testing. It's essential to engage with the gaming community for valuable player feedback and maintain regular updates to ensure compatibility and introduce new features. The successful development and deployment of games on Amazon's platform require a holistic approach that encompasses game creation, user engagement, and ongoing quality assurance.{" "}
           </p>
-          <Button>Book A Free Consultation</Button>
+          <a href='#form-section' >
+
+<Button>Book a Free Consultation</Button>
+</a>
         </div>
         <div className=" ">
           <img src={Vector1} alt="" />

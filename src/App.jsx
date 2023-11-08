@@ -34,9 +34,9 @@ function App() {
       <Route path='/' element={<HomePage/>} />
       <Route path='/privacy-policy' element={<PrivacyPolicyPage/>} />
       <Route path='/amazon-game-development' element={<GameDevelopmentPage/>} />
-      <Route path='/android-game-development' element={<GameDevelopmentPage/>} />
+      <Route path='/game-development' element={<GameDevelopmentPage/>} />
       <Route path='/ios-game-development' element={<GameDevelopmentPage/>} />
-      <Route path='/web-development' element={<WebDevelopmentPage/>} />
+      <Route path='/web-app-development' element={<WebDevelopmentPage/>} />
       <Route path='*' element={<ErrorPage/>} />
     </Routes>
   

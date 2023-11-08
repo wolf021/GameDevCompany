@@ -62,7 +62,7 @@ const HeroSlider = ({ images }) => {
               {image.title}
               </div>
               <p className='md:text-lg text-sm' >Hontarty has an Awesome Range of Furniture.</p>
-              <Button>Get Started</Button>
+              
             </div>
           </div>
         ))}

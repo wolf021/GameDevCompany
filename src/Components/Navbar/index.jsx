@@ -5,6 +5,7 @@ import GameBitLogo from '../../assets/BrandLogo.svg'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faBars,faAngleDown} from "@fortawesome/free-solid-svg-icons"
 import {OurServicesLinks} from "../../../DataConfig/Data"
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
    
@@ -13,7 +14,7 @@ const Navbar = () => {
     const [servicesDropdownVisible, setServicesDropdownVisible] = useState(false);
 
     
-  
+   
 
     useEffect(() => {
       const handleScroll = () => {
@@ -86,7 +87,10 @@ const Navbar = () => {
             
             <li>About</li>
         </ul>
+        <a href='#form-section' >
+
             <Button>Contact Us</Button>
+        </a>
         </div>
         <div className='md:hidden visible relative' >
         <FontAwesomeIcon onClick={()=>setHamburder(!hamburger)} className='text-orange-400' icon={faBars} size='2x' />
@@ -111,9 +115,18 @@ const Navbar = () => {
               servicesDropdownVisible ? 'h-full py-1' : 'max-h-0 hidden'
             }`}
           >
+            <Link to="/game-development" >
             <li className='border-b  py-2 border-orange-400' >Ios Game Developemnt</li>
-            <li className='border-b  py-2 border-orange-400' >Android</li>
-            <li className='border-b  py-2 ' >Web Development</li>
+            </Link>
+            <Link to="/web-app-development">
+            
+            <li className='border-b  py-2 border-orange-400' >Web Development</li>
+            </Link>
+            <Link to="/web-app-development">
+            
+            <li className='border-b  py-2 border-orange-400' >App Development</li>
+            </Link>
+           
             
             
           </ul>
