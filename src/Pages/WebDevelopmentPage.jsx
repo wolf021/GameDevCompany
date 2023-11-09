@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "../Components/Button"
-import WebDevHero from "../assets/webdev-hero.jpg"
+import WebDevHero from "../assets/webdev-hero-1.jpg"
 import { GameExperties, OurServices, Stacks, WebExperties } from "../../DataConfig/Data"
 import Card from "../Components/Card"
 import TrustUmg from "../assets/icons/trust.png"
@@ -11,7 +11,6 @@ import WebDev from '../assets/webdev.jpg'
 import { faBinoculars, faBrush, faBug, faCloudArrowUp, faGears, faLaptopCode, faLightbulb, faSwatchbook,faGear } from "@fortawesome/free-solid-svg-icons"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
 
-import Aos from "aos"
   
 
 const WebDevelopmentPage = () => {
