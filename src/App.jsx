@@ -14,7 +14,7 @@ import GameDevelopmentPage from './Pages/GameDevelopmentPage'
 import WebDevelopmentPage from './Pages/WebDevelopmentPage'
 import {faWhatsapp} from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import 'aos/dist/aos.css'
+
 
 function App() {
   
@@ -22,7 +22,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <div className="fixed  rounded-full  animate-pulse border-orange-400 bottom-14   right-4 z-10  w-max " >
+    <div className="fixed  rounded-full  animate-pulse border-orange-400 bottom-14   right-10 z-  w-max " >
           <a href="https://wa.me/message/2RFBFUTBCJUIL1">
 
           <FontAwesomeIcon size="3x" className="text-green-400" icon={faWhatsapp} />
