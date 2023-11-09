@@ -134,7 +134,7 @@ const Navbar = () => {
           </ul>
         </li>
           
-        <li> <Link to="/about-us" >About</Link> </li>
+        <li onClick={()=> setHamburder(false)} > <Link to="/about-us" >About</Link> </li>
       
         </ul>
     </div>
