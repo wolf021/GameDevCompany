@@ -18,7 +18,7 @@ const Footer = () => {
   const currentDate = dayjs().format("YYYY")
   return (
     <>
-    <section
+      <section
         id="form-section"
         className="bg-slate-800 flex  space-y-5 md:flex-row flex-col md:space-x-[4rem]  md:items-center   h-max  "
       >
@@ -101,86 +101,88 @@ const Footer = () => {
           </form>
         </div>
       </section>
-    <div className="w-full" >
-      <div className="w-full flex md:flex-row flex-col items justify-around py-10 bg-slate-700 text-white h-max space-y-7 px-10 ">
-        <div className="flex items-center space-y-3 py-3 justify-around flex-col text-center  md:w-[20%]  ">
-          <div className="  ">
-            <img className=" h-[70px] " src={BrandLogo} alt="" />
-          </div>
-          <div>
-            <p>
-            we blend creativity and code to bring your digital dreams to life. Whether it's crafting captivating games or dynamic web solutions.
-            </p>
-          </div>
-          <div className="flex justify-around space-x-10  ">
-          <a className="group" href="/">
-
-<FontAwesomeIcon
-  size="2x"
-  className="text-white group-hover:text-orange-400 "
-  icon={faFacebookSquare}
-  />
-  </a>
-             <a className="group" href="/">
-
-<FontAwesomeIcon
-  size="2x"
-  className="text-white group-hover:text-orange-400 "
-  icon={faInstagram}
-  />
-  </a>
-             <a className="group" href="/">
-
-<FontAwesomeIcon
-  size="2x"
-  className="text-white group-hover:text-orange-400 "
-  icon={faLinkedin}
-  />
-  </a>
-            <a className="group" href="/">
-
-            <FontAwesomeIcon
-              size="2x"
-              className="text-white group-hover:text-orange-400 "
-              icon={faWhatsapp}
-              />
+      <div className="w-full">
+        <div className="w-full flex md:flex-row flex-col items justify-around py-10 bg-slate-700 text-white h-max space-y-7 px-10 ">
+          <div className="flex items-center space-y-3 py-3 justify-around flex-col text-center  md:w-[20%]  ">
+            <div className="  ">
+              <img className=" h-[70px] " src={BrandLogo} alt="" />
+            </div>
+            <div>
+              <p>
+                we blend creativity and code to bring your digital dreams to
+                life. Whether it's crafting captivating games or dynamic web
+                solutions.
+              </p>
+            </div>
+            <div className="flex justify-around space-x-10  ">
+              <a className="group" href="https://www.facebook.com/profile.php?id=61553610740592&mibextid=ZbWKwL">
+                <FontAwesomeIcon
+                  size="2x"
+                  className="text-white group-hover:text-orange-400 "
+                  icon={faFacebookSquare}
+                />
               </a>
+              <a className="group" href="/">
+                <FontAwesomeIcon
+                  size="2x"
+                  className="text-white group-hover:text-orange-400 "
+                  icon={faInstagram}
+                />
+              </a>
+              <a
+                className="group"
+                href="https://www.linkedin.com/company/gamebit-square-pvt-ltd/?viewAsMember=true"
+              >
+                <FontAwesomeIcon
+                  size="2x"
+                  className="text-white group-hover:text-orange-400 "
+                  icon={faLinkedin}
+                />
+              </a>
+              <a className="group" href="/">
+                <FontAwesomeIcon
+                  size="2x"
+                  className="text-white group-hover:text-orange-400 "
+                  icon={faWhatsapp}
+                />
+              </a>
+            </div>
+          </div>
+          <div className="text-center md:text-start ">
+            <p className="text-xl font-semibold border-b-2  border-orange-400 mb-3 ">
+              Services
+            </p>
+            <ul className=" space-y-2 flex flex-col ">
+              {OurServicesLinks.map((serviceLink) => (
+                <li>
+                  <a href="">{serviceLink.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="text-center md:text-start ">
+            <p className="text-xl font-semibold border-b-2 border-orange-400 mb-3 ">
+              Main-LInks
+            </p>
+            <ul className=" space-y-2 flex flex-col ">
+              <li>Home</li>
+              <li>Contact</li>
+              <li>About</li>
+            </ul>
           </div>
         </div>
-        <div className="text-center md:text-start ">
-          <p className="text-xl font-semibold border-b-2  border-orange-400 mb-3 ">
-            Services
+        <div className="bg-orange-400 text-center py-3 w-full">
+          <p className="  text-white text-xl ">
+            {" "}
+            {currentDate} GameBit Square PVT(LTD) <sup>®</sup>. All Rights
+            Reserved
+            <span className="text-slate-700 font-semibold ">
+              <Link to="/privacy-policy">.Privacy Policy</Link>
+            </span>
           </p>
-          <ul className=" space-y-2 flex flex-col ">
-            {OurServicesLinks.map((serviceLink) => (
-              <li>
-                <a href="">{serviceLink.title}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="text-center md:text-start ">
-          <p className="text-xl font-semibold border-b-2 border-orange-400 mb-3 ">
-            Main-LInks
-          </p>
-          <ul className=" space-y-2 flex flex-col ">
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About</li>
-          </ul>
         </div>
       </div>
-      <div className="bg-orange-400 text-center py-3 w-full">
-        <p className="  text-white text-xl ">
-          {" "}
-          {currentDate} GameBit Square PVT(LTD) <sup>®</sup>. All Rights Reserved
-          <span className="text-slate-700 font-semibold ">
-            <Link to="/privacy-policy" >
-            .Privacy Policy</Link></span>
-        </p>
-      </div>
-    </div>
-            </>
+    </>
   )
 }
 

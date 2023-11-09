@@ -15,6 +15,7 @@ import Card from "../Components/Card"
 
 
 import TestimonialCard from "../Components/TestimonialCard/TestimonialCard"
+import Aos from "aos"
 
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
   const sliderRef2 = useRef(null)
 
   useEffect(() => {
+    Aos.init()
     const slider = sliderRef.current
     const slider2 = sliderRef2.current
 
@@ -124,7 +126,7 @@ const HomePage = () => {
         id="trust-section"
         className="md:my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around "
       >
-        <div className="md:w-[50%] space-y-6">
+        <div className="md:w-[50%] space-y-6" data-aos="fade-right" >
           <h3 className=" font-semibold text-4xl  text-slate-500 ">
             <span className="text-orange-400">Trust </span> Us with Your{" "}
             <span className="text-orange-400"> Next Game</span> App Development
@@ -145,7 +147,7 @@ const HomePage = () => {
           </p>
           
         </div>
-        <div className=" ">
+        <div className=" " data-aos="fade-left">
           <img src={TrustUmg} alt="" />
         </div>
       </section>

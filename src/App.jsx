@@ -14,6 +14,7 @@ import GameDevelopmentPage from './Pages/GameDevelopmentPage'
 import WebDevelopmentPage from './Pages/WebDevelopmentPage'
 import {faWhatsapp} from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import 'aos/dist/aos.css'
 
 function App() {
   

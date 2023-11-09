@@ -11,16 +11,18 @@ import WebDev from '../assets/webdev.jpg'
 import { faBinoculars, faBrush, faBug, faCloudArrowUp, faGears, faLaptopCode, faLightbulb, faSwatchbook,faGear } from "@fortawesome/free-solid-svg-icons"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
 
-
+import Aos from "aos"
+  
 
 const WebDevelopmentPage = () => {
+    
     return (
       <>
         <section className="bg-slate-700 text-center relative ">
           <img className="w-full h-[500px]" src={WebDevHero} alt="" />
           <div className="flex justify-center  w-full py-[1.5rem] md:py-[7rem] absolute top-0 bg-slate-800 bg-opacity-50 h-full  ">
             <div className="md:w-[60%]  p-[3rem] rounded-xl  space-y-4">
-              <h3 className="text-5xl text-white font-semibold ">
+              <h3 className="md:text-5xl text-3xl text-white font-semibold ">
                 {" "}
                 Custom
                 <span className="text-orange-400"> Web</span> & <span className="text-orange-400"> Mobile</span> Development Services
@@ -211,7 +213,7 @@ const WebDevelopmentPage = () => {
           </div>
 
           <div className=" my-10 mx-[4rem] " >
-  <ul className="grid md:grid-cols-4 gap-4  ">
+  <ul className="grid md:grid-cols-4 grid-cols-2 gap-4  ">
     {
         Stacks.map((stack)=>(
 

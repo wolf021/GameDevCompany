@@ -60,10 +60,10 @@ const Navbar = () => {
         <ul className='flex w-[60%] justify-between ' >
            
             <li>
-              <a href="/">
+              <Link href="/">
 
             Home
-              </a>
+              </Link>
             </li>
             <li className='relative group'>
               <p className=' inline-flex items-center gap-1'   onClick={toggleServicesDropdown}>
@@ -101,7 +101,10 @@ const Navbar = () => {
             hamburger ? 'opacity-100 translate-y-0 duration-500' : 'opacity-0 translate-y-[-10px] duration-500'
           }`}
         >
-          <li className='border-b py-2 border-orange-400' >Home</li>
+          <li className='border-b py-2 border-orange-400' >
+            <Link to="/" > Home</Link>
+           
+            </li>
           <li
           className={`border-b py-2 border-orange-400 ${servicesDropdownVisible ? 'text-orange-400' : ''}`}
          
