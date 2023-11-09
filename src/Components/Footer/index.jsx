@@ -155,7 +155,7 @@ const Footer = () => {
             <ul className=" space-y-2 flex flex-col ">
               {OurServicesLinks.map((serviceLink) => (
                 <li>
-                  <a href="">{serviceLink.title}</a>
+                  <Link to={serviceLink.link} >{serviceLink.title}</Link>
                 </li>
               ))}
             </ul>
@@ -165,9 +165,9 @@ const Footer = () => {
               Main-LInks
             </p>
             <ul className=" space-y-2 flex flex-col ">
-              <li>Home</li>
+              <li> <Link to="/" >Home</Link> </li>
               <li>Contact</li>
-              <li>About</li>
+              <li> <Link to="/about-us" > About</Link></li>
             </ul>
           </div>
         </div>

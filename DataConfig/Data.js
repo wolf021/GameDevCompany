@@ -177,17 +177,21 @@ export const OurServices = [
 export const OurServicesLinks = [
   {
     title: "Mobile Game Development",
+    link: "/game-development"
   },
 
   {
     title: "Web Development",
+    link: "/web-app-development"
   },
 
   {
     title: "Seo/Aso",
+    link: "/seo-aso"
   },
   {
-    title: "Android Development",
+    title: "App Development",
+    link: "/web-app-development"
   },
 
 ]
@@ -360,6 +364,61 @@ export const Stacks = [
   'Git',
 ];
 
+
+export const asoData = [
+  {
+    title: "Explore with Cosmic Journey",
+    description: "Discover and incorporate relevant keywords in your app's title, subtitle, and description to enhance visibility in app store searches. Embark on a cosmic journey and optimize for better discoverability!"
+  },
+   {
+    title: "Cosmic Quest: Galaxy Explorer",
+    description: "Create a concise and compelling app title that conveys its main purpose. Design an eye-catching icon that stands out in the crowded app store. Let users embark on a cosmic quest with Galaxy Explorer!"
+  },
+   {
+    title: "Space Odyssey: Clear and Concise",
+    description: "Craft a clear and concise app description that highlights key features and benefits. Use language that resonates with your target audience and naturally incorporates relevant keywords. Begin the ultimate space odyssey now!"
+  },
+   {
+    title: "Visual Showcase: Galactic Screenshots",
+    description: "Include high-quality screenshots and videos showcasing your app's interface and functionality. Visuals play a crucial role in attracting potential users. Showcase the galactic wonders through stunning visuals!"
+  },
+   {
+    title: "User Cosmos: Encourage Reviews",
+    description: "Encourage users to leave positive reviews and ratings. Respond to feedback to demonstrate your commitment to user satisfaction and continuous improvement. Let the user cosmos speak for your app!"
+  },
+   {
+    title: "Global Reach: Cultural Nuances",
+    description: "Optimize your app for different languages and regions. Consider cultural nuances and preferences to make your app more appealing to a global audience. Expand your reach and make an impact worldwide!"
+  }
+];
+
+// SEO (Search Engine Optimization) Dummy Data
+export const seoData = [
+   {
+    title: "Optimize Keywords: Search Mastery",
+    description: "Conduct thorough keyword research to identify terms your target audience is searching for. Incorporate these keywords strategically into your content. Achieve search mastery through optimized keywords!"
+  },
+   {
+    title: "Content Brilliance: User Intent",
+    description: "Create high-quality, relevant content that satisfies user intent. Regularly update your content to keep it fresh and valuable. Let your content brilliance shine, satisfying users' needs and desires!"
+  },
+   {
+    title: "On-Page Excellence: SEO Harmony",
+    description: "Optimize title tags, meta descriptions, and headers for search engines. Ensure your content is well-organized, easy to read, and provides a positive user experience. Achieve on-page excellence and let your SEO efforts harmonize!"
+  },
+   {
+    title: "Backlink Authority: Link Symphony",
+    description: "Build authoritative and relevant backlinks to your website. Quality backlinks contribute to your site's credibility and improve search engine rankings. Create a link symphony and establish backlink authority!"
+  },
+   {
+    title: "Mobile Optimization: Responsive Elegance",
+    description: "Ensure your website is responsive and mobile-friendly. Google considers mobile optimization as a ranking factor, and many users access content on mobile devices. Achieve responsive elegance for a seamless mobile experience!"
+  },
+   {
+    title: "Analytical Insights: SEO Vigilance",
+    description: "Use analytics tools to track your website's performance. Monitor changes in search engine algorithms and adjust your SEO strategy accordingly for sustained visibility. Exercise SEO vigilance with analytical insights!"
+  }
+];
 
 
 // Access individual data like this:

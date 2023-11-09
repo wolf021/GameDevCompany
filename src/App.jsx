@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -14,13 +14,26 @@ import GameDevelopmentPage from './Pages/GameDevelopmentPage'
 import WebDevelopmentPage from './Pages/WebDevelopmentPage'
 import {faWhatsapp} from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import SeoPage from './Pages/SeoPage'
+import AboutUsPage from './Pages/AboutUsPage'
+import Loader from './Components/Loader/Loader'
 
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    setInterval(() => {
+      setIsLoading(false)
+    }, 2000);
+  
+  
+  }, [])
   
 
   return (
     <>
+    {isLoading? <Loader/>: 
     <BrowserRouter>
     <div className="fixed  rounded-full  animate-pulse border-orange-400 bottom-14   right-10 z-  w-max " >
           <a href="https://wa.me/message/2RFBFUTBCJUIL1">
@@ -34,15 +47,16 @@ function App() {
     <Routes>
       <Route path='/' element={<HomePage/>} />
       <Route path='/privacy-policy' element={<PrivacyPolicyPage/>} />
-      <Route path='/amazon-game-development' element={<GameDevelopmentPage/>} />
       <Route path='/game-development' element={<GameDevelopmentPage/>} />
-      <Route path='/ios-game-development' element={<GameDevelopmentPage/>} />
       <Route path='/web-app-development' element={<WebDevelopmentPage/>} />
+      <Route path='/seo-aso' element={<SeoPage/>} />
+      <Route path='/about-us' element={<AboutUsPage/>} />
       <Route path='*' element={<ErrorPage/>} />
     </Routes>
   
   <Footer/>
     </BrowserRouter>
+    }
    
     </>
   )

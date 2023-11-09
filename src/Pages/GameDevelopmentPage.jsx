@@ -22,13 +22,13 @@ const GameDevelopmentPage = () => {
               Mobile 
               <span className="text-orange-400"> Game</span> Development <span className="text-orange-400"> Services</span>
             </h3>
-            <p className="text-white">
-              Our iOS application development company creates enterprise-grade,
+            <p className="text-white mb-10">
+              Our Mobile development company creates enterprise-grade,
               user-friendly, and impactful iOS apps by using state-of-the-art
               technologies that perfectly facilitate the digital transformation
-              of enterprises.
+
             </p>
-            <a href='#form-section' >
+            <a href='#form-section'  >
 
 <Button>Book a Free Consultation</Button>
 </a>

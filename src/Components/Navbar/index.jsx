@@ -21,8 +21,9 @@ const Navbar = () => {
         if (window.scrollY > 100) {
           setScrolling(true);
           
-        } else if(window.scrollY <80){
+        } else if(window.scrollY <100){
         setHamburder(false)
+        setScrolling(false);
 
         }
          else {
@@ -53,9 +54,11 @@ const Navbar = () => {
 
   return (
     <div className={`flex md:px-3  font-bold justify-between h-[3rem] pr-8  md:h-[4rem] items-center   z-30 ${scrolling || hamburger ? "bg-white  text-black border-b-2 duration-300 sticky top-0  ": "bg-transparent text-white duration-300 fixed "}            w-full `} >  
+    <Link to="/" >
         <div className='w-max' >
             <img className='md:w-[65px] w-[65px]  ' src={GameBitLogo} alt="" />
         </div>
+        </Link>
         <div className={`md:flex justify-between md:items-center md:w-[40%] ${isMobile ? 'hidden' : ''}`}>
         <ul className='flex w-[60%] justify-between ' >
            
@@ -65,7 +68,7 @@ const Navbar = () => {
             Home
               </Link>
             </li>
-            <li className='relative group'>
+            <li className='relative group cursor-pointer hover:text-orange-400 transition duration-300 '>
               <p className=' inline-flex items-center gap-1'   onClick={toggleServicesDropdown}>
 
               Services
@@ -75,17 +78,17 @@ const Navbar = () => {
               {
                 OurServicesLinks.map((serviceLink)=>(
                   <li>
-                  <a className='hover:text-orange-400' href="/">
+                  <Link className='hover:text-orange-400' to={serviceLink.link}>
     
                   {serviceLink.title}
-                  </a>
+                  </Link>
                   </li>
                 ))
               }
               </ul>
             </li>
             
-            <li>About</li>
+            <li> <Link to="/about-us" >About</Link> </li>
         </ul>
         <a href='#form-section' >
 
