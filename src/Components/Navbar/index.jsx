@@ -133,8 +133,8 @@ const Navbar = () => {
             
           </ul>
         </li>
-          <li className='border-b  py-2 border-orange-400' >Contact</li>
-          <li className=' py-2' >About Us</li>
+          
+        <li> <Link to="/about-us" >About</Link> </li>
       
         </ul>
     </div>
