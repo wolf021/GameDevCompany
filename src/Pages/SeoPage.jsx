@@ -10,7 +10,7 @@ const SeoPage = () => {
   return (
     <>
         <section className="bg-slate-700 text-center relative ">
-          <img className="w-full h-[500px]" src={WebDevHero} alt="" />
+          <img className="w-full md:h-[500px]" src={WebDevHero} alt="" />
           <div className="flex justify-center  w-full py-[1.5rem] md:py-[7rem] absolute top-0 bg-slate-800 bg-opacity-50 h-full  ">
             <div className="md:w-[60%]  p-[3rem] rounded-xl  space-y-4">
               <h3 className="md:text-5xl text-3xl text-white font-semibold ">

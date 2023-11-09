@@ -121,18 +121,14 @@ const Navbar = () => {
               servicesDropdownVisible ? 'h-full py-1' : 'max-h-0 hidden'
             }`}
           >
-            <Link to="/game-development" >
-            <li className='border-b  py-2 border-orange-400' >Ios Game Developemnt</li>
+            {
+                OurServicesLinks.map((serviceLink)=>(
+
+            <Link to={serviceLink.link} >
+            <li className='border-b  py-2 border-orange-400' onClick={()=> setHamburder(false)}  >{serviceLink.title}</li>
             </Link>
-            <Link to="/web-app-development">
+                ))}
             
-            <li className='border-b  py-2 border-orange-400' >Web Development</li>
-            </Link>
-            <Link to="/web-app-development">
-            
-            <li className='border-b  py-2 border-orange-400' >App Development</li>
-            </Link>
-           
             
             
           </ul>
