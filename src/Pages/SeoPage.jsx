@@ -3,7 +3,7 @@ import Button from '../Components/Button'
 import WebDevHero from "../assets/webdev-hero-1.jpg"
 import Mobile from '../assets/react-native.png'
 import WebDev from '../assets/webdev.jpg'
-import { asoData,seoData } from "../../DataConfig/Data"
+import { WebExperties, asoData,seoData } from "../../DataConfig/Data"
 import ServiceCard from '../Components/ServiceCard/ServiceCard'
 import { Helmet } from 'react-helmet'
 

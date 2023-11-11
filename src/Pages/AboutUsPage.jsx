@@ -3,7 +3,9 @@ import Button from "../Components/Button"
 import WebDevHero from "../assets/about-us-hero.jpg"
 import OurMission from "../assets/ourmission.jpg"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
-i
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGamepad, faPerson } from "@fortawesome/free-solid-svg-icons"
+import { faWeebly } from "@fortawesome/free-brands-svg-icons"
 import { Helmet } from "react-helmet"
 
 const AboutUsPage = () => {
