@@ -38,7 +38,7 @@ function App() {
     {isLoading? <Loader/>: 
     <BrowserRouter>
     <ToastContainer/>
-    <div className="fixed  rounded-full  animate-pulse border-orange-400 bottom-14   right-10 z-  w-max " >
+    <div className="fixed  rounded-full  animate-pulse border-orange-400 bottom-14   right-10 z-30  w-max " >
           <a href="https://wa.me/message/2RFBFUTBCJUIL1">
 
           <FontAwesomeIcon size="3x" className="text-green-400" icon={faWhatsapp} />
