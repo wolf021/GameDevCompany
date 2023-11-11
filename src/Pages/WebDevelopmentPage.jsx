@@ -1,15 +1,15 @@
 import React from "react"
 import Button from "../Components/Button"
 import WebDevHero from "../assets/webdev-hero-1.jpg"
-import { GameExperties, OurServices, Stacks, WebExperties } from "../../DataConfig/Data"
-import Card from "../Components/Card"
-import TrustUmg from "../assets/icons/trust.png"
+import {Stacks, WebExperties } from "../../DataConfig/Data"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Vector1 from '../assets/vector1.png'
+
 import Mobile from '../assets/react-native.png'
 import WebDev from '../assets/webdev.jpg'
 import { faBinoculars, faBrush, faBug, faCloudArrowUp, faGears, faLaptopCode, faLightbulb, faSwatchbook,faGear } from "@fortawesome/free-solid-svg-icons"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
+import { Helmet } from "react-helmet"
 
   
 
@@ -17,6 +17,14 @@ const WebDevelopmentPage = () => {
     
     return (
       <>
+       <Helmet>
+        <title>GameBitSquare - Web & Mobile Games Development Company</title>
+        <meta
+          name="description"
+          content="Looking for Top Web Development Company ? We Engineer Software Solutions for Enterprises, Growth Companies & Startups."
+        />
+        <link rel="canonical" href="/web-app-development" />
+      </Helmet>
         <section className="bg-slate-700 text-center relative ">
           <img className="w-full h-[500px]" src={WebDevHero} alt="" />
           <div className="flex justify-center  w-full py-[1.5rem] md:py-[7rem] absolute top-0 bg-slate-800 bg-opacity-50 h-full  ">

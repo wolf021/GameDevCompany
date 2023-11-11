@@ -16,6 +16,7 @@ import Card from "../Components/Card"
 
 import TestimonialCard from "../Components/TestimonialCard/TestimonialCard"
 import Aos from "aos"
+import {Helmet} from "react-helmet";
 
 
 const HomePage = () => {
@@ -68,6 +69,14 @@ const HomePage = () => {
 
   return (
     <>
+  <Helmet>
+        <title>GameBitSquare - Web & Mobile Development Company</title>
+        <meta
+          name="description"
+          content="Looking for Top Software Development Company ? We Engineer Software Solutions for Enterprises, Growth Companies & Startups."
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
       <section className=" h-max  relative     " id="hero-section">
         <HeroSlider images={HeroData} />
     

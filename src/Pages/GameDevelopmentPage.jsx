@@ -9,10 +9,19 @@ import Vector1 from '../assets/vector1.png'
 import Vector2 from '../assets/vector2.png'
 import { faBinoculars, faBrush, faBug, faCloudArrowUp, faGears, faLaptopCode, faLightbulb, faSwatchbook } from "@fortawesome/free-solid-svg-icons"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
+import { Helmet } from "react-helmet"
 
 const GameDevelopmentPage = () => {
   return (
     <>
+     <Helmet>
+        <title>GameBitSquare - Mobile Game Development Company</title>
+        <meta
+          name="description"
+          content="Looking for Mobile Game Development Company ? We Engineer Mobile Games."
+        />
+        <link rel="canonical" href="/web-app-development" />
+      </Helmet>
       <section className="bg-slate-700 text-center relative ">
         <img className="w-full h-[500px]" src={GamedevHero} alt="" />
         <div className="flex justify-center  w-full py-[1.5rem] md:py-[7rem] absolute top-0 bg-slate-800 bg-opacity-50 h-full  ">

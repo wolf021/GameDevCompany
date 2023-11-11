@@ -3,13 +3,21 @@ import Button from "../Components/Button"
 import WebDevHero from "../assets/about-us-hero.jpg"
 import OurMission from "../assets/ourmission.jpg"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGamepad, faPerson } from "@fortawesome/free-solid-svg-icons"
-import { faWeebly } from "@fortawesome/free-brands-svg-icons"
+i
+import { Helmet } from "react-helmet"
 
 const AboutUsPage = () => {
   return (
+
     <div>
+         <Helmet>
+        <title>GameBitSquare - About-Us</title>
+        <meta
+          name="description"
+          content="Looking for Top Software Development Company ? We Engineer Software Solutions for Enterprises, Growth Companies & Startups."
+        />
+        <link rel="canonical" href="/about-us" />
+      </Helmet>
       <section className="bg-slate-700 text-center relative ">
         <img className="w-full md:h-[500px]  " src={WebDevHero} alt="" />
         <div className="flex justify-center  w-full py-[1.5rem] md:py-[7rem] absolute top-0 bg-slate-800 bg-opacity-50 h-full  ">

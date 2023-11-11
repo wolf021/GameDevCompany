@@ -3,12 +3,21 @@ import Button from '../Components/Button'
 import WebDevHero from "../assets/webdev-hero-1.jpg"
 import Mobile from '../assets/react-native.png'
 import WebDev from '../assets/webdev.jpg'
-import { WebExperties, asoData,seoData } from "../../DataConfig/Data"
+import { asoData,seoData } from "../../DataConfig/Data"
 import ServiceCard from '../Components/ServiceCard/ServiceCard'
+import { Helmet } from 'react-helmet'
 
 const SeoPage = () => {
   return (
     <>
+     <Helmet>
+        <title>GameBitSquare - Web & mobile  Development Company</title>
+        <meta
+          name="description"
+          content="Looking for Top Software Development Company ? We Provide Seo & Aso Services for WebApps and Mobile Games"
+        />
+        <link rel="canonical" href="/seo-aso" />
+      </Helmet>
         <section className="bg-slate-700 text-center relative ">
           <img className="w-full md:h-[500px]" src={WebDevHero} alt="" />
           <div className="flex justify-center  w-full py-[1.5rem] md:py-[7rem] absolute top-0 bg-slate-800 bg-opacity-50 h-full  ">
