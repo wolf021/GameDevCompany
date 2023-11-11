@@ -43,7 +43,7 @@ const WebDevelopmentPage = () => {
           </div>
         </section>
   
-        <section className="mt-10">
+        <section className="mt-10 2xl:mx-[9rem]">
           <div className="flex justify-around gap-10 px-4 md:px-10 items-center md:flex-row flex-col ">
             <h3 className="text-4xl text-slate-500 font-semibold md:w-[50%] text-center ">
               {" "}
@@ -56,7 +56,7 @@ const WebDevelopmentPage = () => {
               user-friendly Front-End/Backend Websites under one roof.
             </p>
           </div>
-          <div className="flex md:flex-wrap md:justify-start md:gap-7 gap-4 md:mx-[5rem] mx-[1rem] my-10 flex-row overflow-x-auto scroll-smooth" >
+          <div className="flex md:flex-wrap xl:md:justify-center  md:justify-start md:gap-7 gap-4 md:mx-[5rem] mx-[1rem] my-10 flex-row overflow-x-auto scroll-smooth" >
             {WebExperties.map((experties)=>(
               <ServiceCard Title={experties.Title} Info={experties.Info} Img={experties.Icon}  />
                
@@ -71,7 +71,7 @@ const WebDevelopmentPage = () => {
         
         <section
           id="trust-section"
-          className="md:my-[5rem] my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row-reverse flex-col-reverse items-center md:justify-around "
+          className="md:my-[5rem] my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row-reverse flex-col-reverse items-center md:justify-around 2xl:mx-[9rem] "
         >
           <div className="md:w-[50%] space-y-6">
           <h3 className=" font-semibold text-4xl  text-slate-500 "><span className="text-orange-400">Custom</span> Web Development{" "}</h3>
@@ -87,7 +87,7 @@ const WebDevelopmentPage = () => {
 
         <section
           id="trust-section"
-          className="my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around "
+          className="my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around 2xl:mx-[9rem] "
         >
           <div className="md:w-[50%] space-y-6  "  >
           <h3 className=" font-semibold text-4xl  text-slate-500 "><span className="text-orange-400">Mobile </span>  Development{" "}</h3>
@@ -103,7 +103,7 @@ const WebDevelopmentPage = () => {
 
        
         <section className="py-[5rem] my-5 bg-slate-700 text-white">
-          <div className="flex justify-around gap-10 px-10 items-center  flex-col md:flex-row-reverse ">
+          <div className="flex justify-around gap-10 px-10 items-center  flex-col md:flex-row-reverse 2xl:mx-[9rem]">
             <h3 className="text-4xl  font-semibold md:w-[50%]  md:text-end ">
               {" "}
               How We <span className="text-orange-400">Offer</span> You The Best </h3>
@@ -117,7 +117,7 @@ const WebDevelopmentPage = () => {
               <div>
   
             
-            <div className="flex justify-between px-10 my-4 text-white flex-col items-center md:flex-row py-10 space-y-10 ">
+            <div className="flex justify-between px-10 my-4 text-white flex-col items-center md:flex-row py-10 space-y-10 2xl:mx-[9rem] ">
   
            
             <div className="text-center md:text-start ">
@@ -199,7 +199,7 @@ const WebDevelopmentPage = () => {
         </section>
   
   
-        <section className="mt-10 my-[5rem]">
+        <section className="mt-10 my-[5rem] 2xl:mx-[9rem]">
           <div className="flex justify-around gap-10 px-4 md:px-10 items-center md:flex-row flex-col ">
             <h3 className="text-4xl text-slate-500 font-semibold md:w-[50%] text-center ">
               {" "}

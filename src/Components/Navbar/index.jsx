@@ -63,21 +63,24 @@ const Navbar = () => {
         <ul className='flex w-[60%] justify-between ' >
            
             <li>
-              <Link href="/">
+              <Link to="/">
 
             Home
               </Link>
             </li>
-            <li className='relative group cursor-pointer hover:text-orange-400 transition duration-300 '>
-              <p className=' inline-flex items-center gap-1'   onClick={toggleServicesDropdown}>
+            <li className='relative group cursor-pointer '>
+              <Link to="">
+              <p className=' inline-flex items-center gap-1 content-center '   onClick={toggleServicesDropdown}>
 
               Services
+             
               <span><FontAwesomeIcon icon={faAngleDown} /></span>
               </p>
+              </Link>
               <ul className={`absolute w-max space-y-3 top-[3rem] bg-white border-2  shadow-2xl p-4 box-border text-black rounded  ${servicesDropdownVisible? "block z-20" : "hidden" } transition duration-500 ease-in-out`}>
               {
                 OurServicesLinks.map((serviceLink)=>(
-                  <li>
+                  <li  >
                   <Link className='hover:text-orange-400' to={serviceLink.link}>
     
                   {serviceLink.title}
@@ -100,11 +103,11 @@ const Navbar = () => {
 
         </div>
         <ul
-          className={`absolute w-full space-y-2 border-t-2 text-xl border-slate-600 py-5 px-3 bg-white text-orange-400 top-full transition-all ${
-            hamburger ? 'opacity-100 translate-y-0 duration-500' : 'opacity-0 translate-y-[-10px] duration-500'
+          className={`absolute w-full space-y-2 border-t-2 text-xl text-center  border-slate-600 py-5 px-3 bg-white text-orange-400 top-full transition-all ${
+            hamburger ? 'opacity-100 translate-y-0 duration-500  ' : 'opacity-0 translate-y-[-10px] duration-500 hidden '
           }`}
         >
-          <li className='border-b py-2 border-orange-400' >
+          <li className='border-b py-2 border-orange-400 active:bg-orange-400 focus:bg-orange-400 ' >
             <Link to="/" > Home</Link>
            
             </li>
@@ -117,15 +120,15 @@ const Navbar = () => {
           Services <span> <FontAwesomeIcon icon={faAngleDown} /> </span>
           </p>
           <ul
-            className={`pl-4 space-y-2 transition-max-h duration-500 ${
+            className={` space-y-2 transition-max-h duration-500 ${
               servicesDropdownVisible ? 'h-full py-1' : 'max-h-0 hidden'
             }`}
-          >
+          > 
             {
                 OurServicesLinks.map((serviceLink)=>(
 
             <Link to={serviceLink.link} >
-            <li className='border-b  py-2 border-orange-400' onClick={()=> setHamburder(false)}  >{serviceLink.title}</li>
+            <li className='border-t my-3 items-center align-middle  py-2 border-orange-400' onClick={()=> setHamburder(false)}  >{serviceLink.title}</li>
             </Link>
                 ))}
             

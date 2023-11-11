@@ -17,6 +17,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import SeoPage from './Pages/SeoPage'
 import AboutUsPage from './Pages/AboutUsPage'
 import Loader from './Components/Loader/Loader'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
     <>
     {isLoading? <Loader/>: 
     <BrowserRouter>
+    <ToastContainer/>
     <div className="fixed  rounded-full  animate-pulse border-orange-400 bottom-14   right-10 z-  w-max " >
           <a href="https://wa.me/message/2RFBFUTBCJUIL1">
 
@@ -51,7 +54,7 @@ function App() {
       <Route path='/web-app-development' element={<WebDevelopmentPage/>} />
       <Route path='/seo-aso' element={<SeoPage/>} />
       <Route path='/about-us' element={<AboutUsPage/>} />
-      <Route path='*' element={<ErrorPage/>} />
+      <Route path='/*' element={<ErrorPage/>} />
     </Routes>
   
   <Footer/>

@@ -75,7 +75,7 @@ const HomePage = () => {
     
     <section className="bg-slate-100 box-border h-max py-2 "  >
       
-      <div className="flex py-4 md:mx-[5rem] mx-[1rem] overflow-x-auto no-scrollbar space-x-7 " ref={sliderRef}>
+      <div className="flex py-4 md:mx-[5rem] 2xl:mx-[10rem] mx-[1rem] overflow-x-auto no-scrollbar space-x-7 " ref={sliderRef}>
       
       {StackData.map((stack)=>(
         
@@ -89,7 +89,7 @@ const HomePage = () => {
       </div>
     </section>
     
-      <section id="Why-us-section" className="  my-[5rem] ">
+      <section id="Why-us-section" className="  my-[5rem]  2xl:mx-[8rem] ">
         <h3 className=" font-semibold text-4xl text-center text-slate-500 ">
           <span className="text-orange-400">3D Games </span> &{" "}
           <span className="text-orange-400">Web </span> Development Company
@@ -124,7 +124,7 @@ const HomePage = () => {
 
       <section
         id="trust-section"
-        className="md:my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around "
+        className="md:my-[5rem] flex soace-y-10 md:text-start  2xl:mx-[2rem] text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around "
       >
         <div className="md:w-[50%] space-y-6" >
           <h3 className=" font-semibold text-4xl  text-slate-500 ">
@@ -152,7 +152,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id="games-project-section" className="my-[5rem]  ">
+      <section id="games-project-section" className="my-[5rem] 2xl:mx-[6rem]  ">
         <div className="md:mx-16 md:space-y-10  md:text-start text-center space-y-4">
           <h3 className=" font-semibold text-4xl  text-slate-500 md:w-[50%] ">
             <span className="text-orange-400">Trust </span> Us with Your{" "}
@@ -171,7 +171,7 @@ const HomePage = () => {
         <div
           id="games-project-slider"
           ref={sliderRef2}
-          className="flex justify-between  overflow-x-scroll space-x-10 mx-[1rem] md:mx-[4rem] my-6 no-scrollbar "
+          className="flex justify-between  overflow-x-scroll space-x-10 mx-[1rem]  md:mx-[4rem] my-6 no-scrollbar "
           
         >
           {GameImages.map((game) => (
@@ -189,7 +189,7 @@ const HomePage = () => {
         </h3>
         <div
           id="ourservices-card-container"
-          className="flex md:flex-wrap overflow-x-auto   my-10 gap-y-2 gap-x-1  mx-[2rem] "
+          className="flex md:flex-wrap 2xl:mx-[10rem] 2xl:justify-center overflow-x-auto   my-10 gap-y-2 gap-x-1  mx-[2rem] "
         >
           {OurServices.map((card,index) => (
             <Card
@@ -207,7 +207,7 @@ const HomePage = () => {
           <span className="text-orange-400">Our </span> Trusted {" "}
           <span className="text-orange-400">Customes </span> Remarks
         </h3>
-        <div className="flex md:justify-around overflow-x-auto md:space-x-3 space-x-3 items-center my-4 mx-8  ">
+        <div className="flex md:justify-around 2xl:mx-[10rem] overflow-x-auto md:space-x-3 space-x-3 items-center my-4 mx-8  ">
 
         {Testimonilas.map((testimonial)=>(
 

@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import BrandLogo from "../../assets/BrandLogo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
@@ -13,9 +14,34 @@ import { OurServicesLinks } from "../../../DataConfig/Data"
 import dayjs from "dayjs"
 import Button from "../Button"
 import FormImg from "../../assets/form.jpg"
+import {  toast } from 'react-toastify';
+
+
 
 const Footer = () => {
   const currentDate = dayjs().format("YYYY")
+
+  const Service_ID  = 'service_vrkgncq'
+  const Tempelate_ID = 'template_k445zgm'
+  const Public_ID = 'O517K-8rZEWmz1bng'
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(Service_ID, Tempelate_ID, form.current,  Public_ID)
+      .then((result) => {
+          console.log(result.text);
+          toast.success("Your email has been to GameBit Square")
+      }, (error) => {
+          console.log(error.text);
+          toast.success("Unable to send Email. please Retry later or whatsapp us")
+      });
+  };
+  
+  
+
   return (
     <>
       <section
@@ -32,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <form className="grid px-3 py-4 md:py-0  md:grid-cols-2 h-max   gap-4">
+          <form  ref={form} onSubmit={sendEmail} className="grid px-3 py-4 md:py-0  md:grid-cols-2 h-max   gap-4">
             <div className="mb-4 col-span-2 md:col-auto ">
               <label
                 className="text-orange-400 font-semibold text-2xl   "
@@ -43,7 +69,7 @@ const Footer = () => {
               <input
                 type="text"
                 id="name"
-                name="name"
+                name="from_name"
                 placeholder="Name"
                 className="w-full px-3 py-2 border rounded-lg  outline-orange-400"
               />
@@ -57,9 +83,9 @@ const Footer = () => {
                 Email:
               </label>
               <input
-                type="email"
+                type="text"
                 id="email"
-                name="email"
+                name="user_email" 
                 placeholder="Email"
                 className="w-full px-3 py-2 border rounded-lg outline-orange-400"
               />
@@ -75,7 +101,7 @@ const Footer = () => {
               <input
                 type="tel"
                 id="phone"
-                name="phone"
+                name="contact_number"
                 placeholder="Phone Number"
                 className="w-full px-3 py-2 border rounded-lg outline-orange-400"
               />
@@ -90,13 +116,13 @@ const Footer = () => {
               </label>
               <textarea
                 id="message"
-                name="message"
+                name="message" 
                 placeholder="Enter your Query Here . We will Get Back To You"
                 className="w-full h-40 px-3 py-2 border rounded-lg outline-orange-400 resize-none"
               ></textarea>
             </div>
             <div className=" ">
-              <Button type="submit">Submit</Button>
+              <Button type="submit"  >Submit</Button>
             </div>
           </form>
         </div>

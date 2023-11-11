@@ -16,7 +16,7 @@ const GameDevelopmentPage = () => {
       <section className="bg-slate-700 text-center relative ">
         <img className="w-full h-[500px]" src={GamedevHero} alt="" />
         <div className="flex justify-center  w-full py-[1.5rem] md:py-[7rem] absolute top-0 bg-slate-800 bg-opacity-50 h-full  ">
-          <div className="md:w-[60%]  p-[3rem] rounded-xl  space-y-4">
+          <div className="md:w-[60%]  p-[3rem] rounded-xl  space-y-6">
             <h3 className="md:text-5xl text-3xl text-white font-semibold ">
               {" "}
               Mobile 
@@ -28,10 +28,10 @@ const GameDevelopmentPage = () => {
               technologies that perfectly facilitate the digital transformation
 
             </p>
-            <a href='#form-section'  >
+           
 
-<Button>Book a Free Consultation</Button>
-</a>
+<Button><a href='#form-section'  >Book a Free Consultation</a></Button>
+
           </div>
         </div>
       </section>
@@ -50,7 +50,7 @@ const GameDevelopmentPage = () => {
             under one roof.
           </p>
         </div>
-        <div className="flex overflow-x-scroll px-8 my-10 ">
+        <div className="flex overflow-x-scroll px-8 my-10 no-scrollbar 2xl:mx-[9rem] ">
           {OurServices.map((card, index) => (
             <Card
               cardImg={card.image}
@@ -81,7 +81,7 @@ const GameDevelopmentPage = () => {
       </section>
       <section
         id="trust-section"
-        className="md:my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row-reverse flex-col-reverse items-center md:justify-around "
+        className="md:my-[5rem] 2xl:mx-[9rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row-reverse flex-col-reverse items-center md:justify-around "
       >
         <div className="md:w-[50%] space-y-6">
         <h3 className=" font-semibold text-4xl  text-slate-500 "><span className="text-orange-400">Android </span> Game Development{" "}</h3>
@@ -99,7 +99,7 @@ const GameDevelopmentPage = () => {
       </section>
       <section
         id="trust-section"
-        className="md:my-[5rem] flex soace-y-10 md:text-start text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around "
+        className="md:my-[5rem] flex soace-y-10 md:text-start 2xl:mx-[9rem] text-center gap-y-10 px-4 md:flex-row flex-col-reverse items-center md:justify-around "
       >
         <div className="md:w-[50%] space-y-6">
           <h3 className=" font-semibold text-4xl  text-slate-500 "><span className="text-orange-400">Amazon </span> Game Development{" "}</h3>
@@ -116,7 +116,7 @@ const GameDevelopmentPage = () => {
         </div>
       </section>
       <section className="py-[5rem] my-5 bg-slate-700 text-white">
-        <div className="flex justify-around gap-10 px-10 items-center  flex-col md:flex-row-reverse ">
+        <div className="flex justify-around gap-10 px-10 items-center  flex-col md:flex-row-reverse 2xl:mx-[9rem] ">
           <h3 className="text-4xl  font-semibold md:w-[50%]  md:text-end ">
             {" "}
             How We <span className="text-orange-400">Offer</span> You The Best </h3>
@@ -130,7 +130,7 @@ const GameDevelopmentPage = () => {
             <div>
 
           
-          <div className="flex justify-between px-10 my-4 text-white flex-col items-center md:flex-row py-10 space-y-10 ">
+          <div className="flex justify-between px-10 my-4 text-white flex-col items-center md:flex-row py-10 space-y-10 2xl:mx-[9rem] ">
 
          
           <div className="text-center md:text-start ">
@@ -212,7 +212,7 @@ const GameDevelopmentPage = () => {
       </section>
 
 
-      <section className="mt-10">
+      <section className="mt-10 2xl:mx-[9rem]">
         <div className="flex justify-around gap-10 px-4 md:px-10 items-center md:flex-row flex-col ">
           <h3 className="text-4xl text-slate-500 font-semibold md:w-[50%] text-center ">
             {" "}
@@ -223,7 +223,7 @@ const GameDevelopmentPage = () => {
           At Gamebit Square, we create Android applications that are embedded with features that are both functional and enticing. Have a look at some of the prime features that the in-demand team at our android application development company integrates into our android apps:
           </p>
         </div>
-        <div className="flex overflow-x-scroll md:px-8 px-4 my-10 md:mx-3  space-x-5 no-scrollbar  scroll-smooth  ">
+        <div className="flex overflow-x-scroll md:px-8 px-4 my-10 md:mx-3  space-x-5 no-scrollbar  scroll-smooth xl:mx-[2rem] ">
           {GameExperties.map((experties)=>(
             <ServiceCard Title={experties.Title} Info={experties.Info} Img={experties.Icon} />
              
