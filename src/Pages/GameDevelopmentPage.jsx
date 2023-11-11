@@ -9,7 +9,7 @@ import Vector1 from '../assets/vector1.png'
 import Vector2 from '../assets/vector2.png'
 import { faBinoculars, faBrush, faBug, faCloudArrowUp, faGears, faLaptopCode, faLightbulb, faSwatchbook } from "@fortawesome/free-solid-svg-icons"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
-import { Helmet } from "react-helmet"
+import { Helmet } from 'react-helmet-async'
 
 const GameDevelopmentPage = () => {
   return (

@@ -16,7 +16,7 @@ import Card from "../Components/Card"
 
 import TestimonialCard from "../Components/TestimonialCard/TestimonialCard"
 import Aos from "aos"
-import {Helmet} from "react-helmet";
+import { Helmet } from 'react-helmet-async'
 
 
 const HomePage = () => {

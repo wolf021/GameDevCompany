@@ -6,7 +6,7 @@ import ServiceCard from "../Components/ServiceCard/ServiceCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGamepad, faPerson } from "@fortawesome/free-solid-svg-icons"
 import { faWeebly } from "@fortawesome/free-brands-svg-icons"
-import { Helmet } from "react-helmet"
+import { Helmet } from 'react-helmet-async'
 
 const AboutUsPage = () => {
   return (

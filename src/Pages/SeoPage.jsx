@@ -5,7 +5,7 @@ import Mobile from '../assets/react-native.png'
 import WebDev from '../assets/webdev.jpg'
 import { WebExperties, asoData,seoData } from "../../DataConfig/Data"
 import ServiceCard from '../Components/ServiceCard/ServiceCard'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const SeoPage = () => {
   return (

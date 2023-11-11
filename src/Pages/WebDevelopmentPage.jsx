@@ -10,7 +10,7 @@ import Mobile from '../assets/react-native.png'
 import WebDev from '../assets/webdev.jpg'
 import { faBinoculars, faBrush, faBug, faCloudArrowUp, faGears, faLaptopCode, faLightbulb, faSwatchbook,faGear } from "@fortawesome/free-solid-svg-icons"
 import ServiceCard from "../Components/ServiceCard/ServiceCard"
-import { Helmet } from "react-helmet"
+import { Helmet } from 'react-helmet-async'
 
   
 
