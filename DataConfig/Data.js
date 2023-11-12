@@ -56,19 +56,20 @@ export const CardData = [
     image: Card1,
     title: "Vissually Appealing Animation",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "our animations are a symphony of creativity and technical expertise. Each frame is meticulously crafted to bring characters and environments to life with fluid motion and dynamic visuals",
   },
   {
     image: Card2,
-    title: "Vissually Appealing Animation",
+    title: "Excellent User Experience",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Our games are user-friendly and engaging. They are capable of standing out and encouraging the players to keep coming back.We puts in great effort to develop entertaining, impressive, high-resolution mobile games of all genres that run seamlessly on Android and iOS devices.",
   },
   {
     image: Card3,
-    title: "Vissually Appealing Animation",
+    title: "High-Performance Games",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "We have an in-depth understanding of game design and mechanics that helps us develop outstanding games that have the potential of reaching millions of players around the world. We choose the right technology and platform that assist in reaching the goals of your project."
+  
   },
 ]
 
@@ -104,75 +105,76 @@ export const OurServices = [
     image: Card1,
     title: "Android Game Development",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Craft captivating Android games with cutting-edge technology, delivering seamless performance and immersive gaming experiences.",
   },
   {
     image: Card2,
-    title: "Ios Game Development",
+    title: "iOS Game Development",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Elevate gaming on iOS devices with innovative design and smooth functionality, ensuring a captivating user experience.",
   },
   {
     image: Card3,
     title: "Amazon Game Development",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Build thrilling games for the Amazon platform, combining creativity with technical excellence to create an engaging adventure.",
   },
   {
     image: Card1,
     title: "Game Ads",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Amplify game visibility through strategic and compelling advertisements, reaching the right audience for maximum impact.",
   },
   {
     image: Card2,
     title: "In-App Purchases",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Enhance user engagement and revenue streams by integrating seamless in-app purchase systems, optimizing the gaming experience.",
   },
   {
     image: Card3,
     title: "Bug Fixes",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Ensure a smooth gaming experience by promptly identifying and resolving bugs, maintaining the integrity of your game.",
   },
   {
     image: Card2,
     title: "Web Development",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Translate your Web experiences , creating an online presence for wider reach and accessibility.",
   },
   {
-    image: Card3,
+    image: Card1,
     title: "FrontEnd Development",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Design visually appealing and user-friendly interfaces for an enjoyable User experience.",
   },
   {
     image: Card3,
     title: "Backend Development",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Strengthen your Web's backbone with robust backend development, optimizing performance and scalability.",
   },
   {
-    image: Card3,
-    title: "Seo",
+    image: Card2,
+    title: "SEO",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Boost Web discoverability through strategic Search Engine Optimization, increasing visibility in the digital landscape.",
   },
   {
-    image: Card3,
+    image: Card1,
     title: "Mobile Responsive Design",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Adapt Web design to various mobile devices for a consistent and engaging experience across different screens.",
   },
   {
     image: Card3,
     title: "Testing & Deployment",
     description:
-      "lorem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id orem ipsum dolor sit amet, consectetur adip lorem sed diam non pro id",
+      "Guarantee Web quality through rigorous testing and seamless deployment, ensuring a flawless gaming experience.",
   },
-]
+];
+
 
 export const OurServicesLinks = [
   {
